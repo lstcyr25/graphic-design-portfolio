@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About Me</a>
+        <a href="/projects">Projects</a>
+        <a href="/photography">Photography</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="page-wrapper">
+    <section class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h1>Welcome to My Portfolio</h1>
+                <p>
+                    I’m a graphic design student at Polk State College working towards an Associate’s degree. Art has been a strong interest of mine throughout
+                    my entire life which expanded into a passion for design after graduating high school.
+                </p>
+                <p>
+                    I’ve grown from learning simple tools in Photoshop to working with
+                    other programs and creating projects that truly mean something to me.
+                    I still have more to learn and I am eager to do so. As I grow my abilities I hope to explore career options that will allow me to apply my skills to
+                    something even greater and continue to learn more.
+                </p>
+                <a href="{{ url_for('static', filename='Sarah_Arnold_Resume.pdf') }}" target="_blank" class="btn">📄 Download Resume</a>
+            </div>
+
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/Sarah_Portrait.jpg') }}" alt="Picture of Sarah Arnold">
+            </div>
+        </div>
+    </section>
+    </div>
+
+</body>
+</html>

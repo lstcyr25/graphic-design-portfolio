@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photography</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About Me</a>
+    <a href="/projects">Projects</a>
+    <a href="/photography">Photography</a>
+    <a href="/contact">Contact</a>
+</nav>
+
+<div class="page-wrapper">
+<section class="photography-section">
+    <h1>My Photography</h1>
+    <p>Photography became a large interest of mine alongside graphic design. In the beginning I didn’t see much in it, but
+        over time I’ve grown to see how diverse the photography industry is and the importance of it in different workplaces. I’ve used a variety of techniques to create multiple series that
+        explore topics such as still life, portraiture, shutter speed, etc. I used Photoshop to edit the images by adjusting the colors, details, removing items, and to overall finalize them.</p>
+    <br>
+    <p>Here are my selected photography projects, grouped by theme.</p>
+
+    <!-- Shutter Speed -->
+    <h2>Shutter Speed</h2>
+    <div class="photo-grid">
+        <div class="photo-item">
+            <a href="#lightbox-shutter1"><img src="{{ url_for('static', filename='images/Sarah_A_05.jpg') }}"></a>
+        </div>
+        <div class="photo-item">
+            <a href="#lightbox-shutter2"><img src="{{ url_for('static', filename='images/Sarah_A_01.jpg') }}"></a>
+        </div>
+        <div class="photo-item">
+            <a href="#lightbox-shutter3"><img src="{{ url_for('static', filename='images/Sarah_A_02.jpg') }}"></a>
+        </div>
+        <div class="photo-item">
+            <a href="#lightbox-shutter4"><img src="{{ url_for('static', filename='images/Sarah_A_03.jpg') }}"></a>
+        </div>
+    </div>
+
+    <!-- Still Life -->
+    <h2>Still Life</h2>
+    <div class="photo-grid">
+        <div class="photo-item">
+            <a href="#lightbox-still1"><img src="{{ url_for('static', filename='images/Sarah_Arnold3.jpg') }}"></a>
+        </div>
+        <div class="photo-item">
+            <a href="#lightbox-still2"><img src="{{ url_for('static', filename='images/Sarah_Arnold5.jpg') }}"></a>
+        </div>
+        <div class="photo-item">
+            <a href="#lightbox-still3"><img src="{{ url_for('static', filename='images/Sarah_Arnold2.jpg') }}"></a>
+        </div>
+    </div>
+
+    <!-- Portraits -->
+    <h2>Portraits</h2>
+    <div class="photo-grid">
+        <div class="photo-item">
+            <a href="#lightbox-portrait1"><img src="{{ url_for('static', filename='images/Subject1_03.jpg') }}"></a>
+        </div>
+        <div class="photo-item">
+            <a href="#lightbox-portrait2"><img src="{{ url_for('static', filename='images/Subject2_03.jpg') }}"></a>
+        </div>
+        <div class="photo-item">
+            <a href="#lightbox-portrait3"><img src="{{ url_for('static', filename='images/Subject1_07.jpg') }}"></a>
+        </div>
+        <div class="photo-item">
+            <a href="#lightbox-portrait4"><img src="{{ url_for('static', filename='images/Subject2_02.jpg') }}"></a>
+        </div>
+        <div class="photo-item">
+            <a href="#lightbox-portrait5"><img src="{{ url_for('static', filename='images/Subject1_06.jpg') }}"></a>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox: Shutter Speed 1 -->
+<div id="lightbox-shutter1" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Sarah_A_05.jpg') }}">
+  </div>
+</div>
+
+<!-- Lightbox: Shutter Speed 2 -->
+<div id="lightbox-shutter2" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Sarah_A_01.jpg') }}">
+  </div>
+</div>
+
+<!-- Lightbox: Shutter Speed 3 -->
+<div id="lightbox-shutter3" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Sarah_A_02.jpg') }}">
+  </div>
+</div>
+
+<!-- Lightbox: Shutter Speed 4 -->
+<div id="lightbox-shutter4" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Sarah_A_03.jpg') }}">
+  </div>
+</div>
+
+<!-- Lightbox: Still Life 1 -->
+<div id="lightbox-still1" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Sarah_Arnold3.jpg') }}">
+  </div>
+</div>
+
+<!-- Lightbox: Still Life 2 -->
+<div id="lightbox-still2" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Sarah_Arnold5.jpg') }}">
+  </div>
+</div>
+
+<!-- Lightbox: Still Life 3 -->
+<div id="lightbox-still3" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Sarah_Arnold2.jpg') }}">
+  </div>
+</div>
+
+<!-- Lightbox: Portrait 1 -->
+<div id="lightbox-portrait1" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Subject1_03.jpg') }}">
+  </div>
+</div>
+
+<!-- Lightbox: Portrait 2 -->
+<div id="lightbox-portrait2" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Subject2_03.jpg') }}">
+  </div>
+</div>
+
+<!-- Lightbox: Portrait 3 -->
+<div id="lightbox-portrait3" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Subject1_07.jpg') }}">
+  </div>
+</div>
+
+<!-- Lightbox: Portrait 4 -->
+<div id="lightbox-portrait4" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Subject2_02.jpg') }}">
+  </div>
+</div>
+
+<!-- Lightbox: Portrait 5 -->
+<div id="lightbox-portrait5" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Subject1_06.jpg') }}">
+  </div>
+</div>
+</div>
+
+</body>
+</html>

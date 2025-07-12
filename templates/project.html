@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/about">About Me</a> |
+        <a href="/projects">Projects</a> |
+        <a href="/photography">Photography</a> |
+        <a href="/contact">Contact</a> 
+    </nav>
+
+ <div class="page-wrapper">
+<div class="projects-container">
+  <h1>My Design Portfolio</h1>
+
+  <div class="project-grid">
+
+    <!-- Book Design -->
+    <div class="project-item">
+      <a href="#lightbox-book">
+        <img src="{{ url_for('static', filename='images/Book.jpg') }}" alt="Book Design Mockup">
+        <h3>Book Design</h3>
+      </a>
+    </div>
+
+    <div class="project-item">
+      <a href="#lightbox-flyer">
+        <img src="{{ url_for('static', filename='images/Flyer.jpg') }}" alt="Flyer Design Mockup">
+        <h3>Flyer Design</h3>
+      </a>
+    </div>
+
+    <div class="project-item">
+      <a href="#lightbox-brochure">
+        <img src="{{ url_for('static', filename='images/Trifold.jpg') }}" alt="Brochure Design Mockup">
+        <h3>Brochure Design</h3>
+      </a>
+    </div>
+
+    <div class="project-item">
+      <a href="#lightbox-menu">
+        <img src="{{ url_for('static', filename='images/Menu.jpg') }}" alt="Menu Design Mockup">
+        <h3>Menu Design</h3>
+      </a>
+    </div>
+
+    <div class="project-item">
+      <a href="#lightbox-logo">
+        <img src="{{ url_for('static', filename='images/Shirt.jpg') }}" alt="Logo Design Mockup">
+        <h3>Logo Design</h3>
+      </a>
+    </div>
+
+    <!-- Repeat for other projects like Flyer, Menu, etc. -->
+
+  </div>
+</div>
+
+<!-- Lightbox: Book Design -->
+<div id="lightbox-book" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Book.jpg') }}" alt="Book Design Full">
+    <h2>Book Design</h2>
+    <p>
+      The design challenge was to create a book that is print-ready and includes both the cover as well as the content pages. It
+      should have proper layout and all contents should be styled.
+    </p>
+    <br>
+    <p>
+      I solved this by designing a fictitious book about a girl who finds romance after struggling with mental health her whole life. I used warm colors and included assets that portray such
+      relationship. I utilized bold headings, readable fonts, and used InDesign to organize these with styles.
+    </p>
+    <h4>Colors Used:</h4>
+    <div class="color-palette">
+      <span style="background:#e38025;"></span>
+      <span style="background:#000000;"></span>
+    </div>
+
+    <h4>Fonts Used:</h4>
+    <ul class="font-list">
+      <li>Elephant Regular</li>
+      <li>Lucida Sans Regular</li>
+    </ul>
+  </div>
+</div>
+<!--Lightbox: Flyer Design -->
+<div id="lightbox-flyer" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Flyer.jpg') }}" alt="Flyer Design Full">
+    <h2>Flyer Design</h2>
+    <p>
+      The design challenge was to create a flyer advertising a specific event or something for a company. Its goal was to be something eye catching that would encourage someone
+      to engage in whatever the flyer is for and be consistent in its elements such as fonts, colors, images, and so forth.
+    </p>
+    <br>
+    <p>
+      I solved this by designing a flyer for a fictitious, spring craft fair event where local vendors can sell their goods. I used
+      colors that represent the season and playful fonts to showcase the artistic aesthetic of the event. Hierarchy is used to place most important information towards the top.
+    </p>
+    <h4>Colors Used:</h4>
+    <div class="color-palette">
+      <span style="background:#fdf7d3;"></span>
+      <span style="background:#868f55;"></span>
+    </div>
+
+    <h4>Fonts Used:</h4>
+    <ul class="font-list">
+      <li>Bontanica Script</li>
+      <li>Roboto Black</li>
+    </ul>
+  </div>
+</div>
+<!--Lightbox: Brochure Design -->
+<div id="lightbox-brochure" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Trifold.jpg') }}" alt="Brochure Design Full">
+    <h2>Brochure Design</h2>
+    <p>
+      The design challenge was to create a trifold brochure that is professional and print-ready. It should be consistent across each page and have proper hierarchy. I solved this
+      by creating a travel brochure for a fictitious European tour. I used natural colors and images to portray tourist attractions.
+    </p>
+    <h4>Colors Used:</h4>
+    <div class="color-palette">
+      <span style="background:#40432d;"></span>
+      <span style="background:#72491e;"></span>
+    </div>
+
+    <h4>Fonts Used:</h4>
+    <ul class="font-list">
+      <li>Brittanic Bold</li>
+      <li>Dubai Regular</li>
+    </ul>
+  </div>
+</div>
+<!--Lightbox: Menu -->
+<div id="lightbox-menu" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Menu.jpg') }}" alt="Menu Design Full">
+    <h2>Menu Design</h2>
+    <p>
+      The design challenge was to create a multi-page document for a restaurant menu that is professional and well
+      organized. It should include all typical information that a traditional menu would have and be consistent.
+    </p>
+    <br>
+    <p>
+       I solved this by creating a menu for a fictitious burger restaurant with contents separated into categories including
+      pictures to display the items. I used bold colors and fonts for headings and brown for the general design.
+    </p>
+    <h4>Colors Used:</h4>
+    <div class="color-palette">
+      <span style="background:#5a1720;"></span>
+      <span style="background:#ddbc9b;"></span>
+      <span style="background:#f3bc19;"></span>
+    </div>
+
+    <h4>Fonts Used:</h4>
+    <ul class="font-list">
+      <li>Montserrat Alternates Black</li>
+      <li>Lato Bold</li>
+    </ul>
+  </div>
+</div>
+<!--Lightbox: Logo Design-->
+<div id="lightbox-logo" class="lightbox">
+  <a href="#" class="lightbox-close">×</a>
+  <div class="lightbox-content">
+    <img src="{{ url_for('static', filename='images/Shirt.jpg') }}" alt="Logo Design Full">
+    <h2>Logo Design</h2>
+    <p>
+      The design challenge was to create a sizable logo with multiple color versions that is both print and web ready. The
+      logo should communicate the purpose of the business and be both eye-catching yet simple. 
+    </p>
+    <br>
+    <p>
+      I solved this by designing a logo for a fictitious company called “Little Love Goods” which is a baby goods store. The
+      logo uses pastel colors to create a calm feeling and displays a baby carrier. Multiple variations were sketched on paper
+      than transferred into Illustrator to be finalized. 
+    </p>
+    <h4>Colors Used:</h4>
+    <div class="color-palette">
+      <span style="background:#5F6C78;"></span>
+      <span style="background:#D9E6F6;"></span>
+      <span style="background:#ECBAB9;"></span>
+    </div>
+
+    <h4>Fonts Used:</h4>
+    <ul class="font-list">
+      <li>Gluten Semibold</li>
+      <li>Lato Bold Italic</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+ <!-- Lightbox Behavior Script -->
+  <script>
+    function closeLightbox(event) {
+      if (event.target.classList.contains('lightbox')) {
+        window.location.hash = '';
+      }
+    }
+
+    window.addEventListener("hashchange", function () {
+      if (location.hash.startsWith("#lightbox")) {
+        window.scrollTo(0, 0);
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        window.location.hash = '';
+      }
+    });
+  </script>
+
+</body>
+</html>

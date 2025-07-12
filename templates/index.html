@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTC-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About Me</a>
+        <a href="/projects">Projects</a>
+        <a href="/photography">Photography</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="page-wrapper">
+    <div class="container">
+        <div class="text">
+            <p>Hi everyone, my name is</p>
+            <h1>Sarah<br>Arnold</h1>
+            <h2>I'm a <br><span class="black">Student Graphic Designer</span></h2>
+        </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/Sarah_Landscape.jpg') }}" alt="Sarah Arnold">
+        </div>
+    </div>
+    </div>
+</body>
+</html>
