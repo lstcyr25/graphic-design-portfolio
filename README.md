@@ -1,6 +1,6 @@
 # 🎨 Sarah Arnold – Graphic Design Portfolio
 
-This is a personal portfolio website built with **Flask** to showcase my graphic design work, including projects like book layouts, flyer designs, logos, menus, and photography. It includes lightbox features for enlarged project views and clean responsive design.
+This is a personal portfolio website built with **Flask** to showcase graphic design work, including projects like book layouts, flyer designs, logos, menus, and photography. It includes lightbox features for enlarged project views and clean responsive design.
 
 ---
 
